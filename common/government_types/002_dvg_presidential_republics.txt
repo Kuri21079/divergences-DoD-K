@@ -1,0 +1,45 @@
+﻿gov_hetmanate = {
+	transfer_of_power = dictatorial
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_HETMAN"
+	female_ruler = "RULER_TITLE_HETMAN"
+
+    possible = {
+        has_law = law_type:law_presidential_republic
+        OR = {
+            has_law = law_type:law_peasant_levies
+            has_law = law_type:law_national_militia
+        }
+        OR = {
+            AND = {
+                exists = c:CSK
+                c:CSK = ROOT
+            }
+            AND = {
+                exists = c:UKR
+                c:UKR = ROOT
+            }
+            AND = {
+                exists = c:KHK
+                c:KHK = ROOT
+            }
+            AND = {
+                exists = c:DON
+                c:DON = ROOT
+            }
+            AND = {
+                exists = c:AKH
+                c:AKH = ROOT
+            }
+            AND = {
+                exists = c:VOR
+                c:VOR = ROOT
+            }
+        }
+    }
+
+    on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+}
