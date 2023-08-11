@@ -1,0 +1,34 @@
+﻿dvg_embrace_han = {
+	is_shown = {
+		NOT = { has_primary_culture = cu:han }
+		OR = {
+		any_primary_culture = {
+							has_discrimination_trait = sinosphere
+						}
+		any_primary_culture = {
+							has_discrimination_trait = han_chinese
+						}
+		any_primary_culture = {
+							has_discrimination_trait = mongol_language
+						}
+			}
+	}
+
+    possible = {
+
+		has_technology_researched = pan-nationalism
+		
+		country_rank > rank_value:unrecognized_power
+	}
+
+    when_taken = {
+		
+		add_primary_culture = cu:han
+    }
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+

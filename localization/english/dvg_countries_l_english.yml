@@ -455,8 +455,8 @@
  IAK_ADJ: "Siak"
  PAG: "Pagaruyung"
  PAG_ADJ: "Pagaruyung"
- NAN: "Nanjing"
- NAN_ADJ: "Nanjing"
+ NAN: "Wuguo"
+ NAN_ADJ: "Wuguoren"
  CEL: "Celebes"
  CEL_ADJ: "Celebes"
  dyn_c_cel_agency: "Celebes Agency"
@@ -572,6 +572,9 @@
  NGL_ADJ: "Wadjiginy"
  GRJ: "Gurindji"
  GRJ_ADJ: "Gurindji"
+ 
+ MOA: "Moana Nui"
+ MOA_ADJ: "Moani"
  
  SHU: "Great Shun"
  SHU_ADJ: "Shunguoren"

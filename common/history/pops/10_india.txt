@@ -385,6 +385,16 @@
 				size = 144231
 			}
 		}
+		region_state:SRY = {
+			create_pop = {
+				culture = marathi
+				size = 117561
+			}
+			create_pop = {
+				culture = oriya
+				size = 8038
+			}
+		}
 	}
 	
 	#Rajputs

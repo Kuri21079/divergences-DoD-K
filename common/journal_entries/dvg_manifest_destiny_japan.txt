@@ -26,3 +26,24 @@
 	weight = 100
 	should_be_pinned_by_default = yes
 }
+je_high_castle = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	# note that if you change this, also update the decision
+	complete = {
+			AND = {
+				owns_entire_state_region = STATE_QINGQIU
+				owns_entire_state_region = STATE_XIAZHOU
+				owns_entire_state_region = STATE_DONGJI
+				owns_entire_state_region = STATE_JULINYUTIAN
+				owns_entire_state_region = STATE_SHANGU_SIWANG
+			}
+		
+	}
+	
+    on_complete = {
+		trigger_event = { id = dvg_manifest_destiny_japan.1 }
+	}
+	
+	weight = 100
+	should_be_pinned_by_default = yes
+}

@@ -511,12 +511,7 @@
 			direction = export
 			target = c:ARN.market
 		}
-		create_trade_route = {
-			goods = opium
-			level = 3
-			direction = import
-			target = c:MUG.market
-		}
+		
 	}
 	
 	#Burgundy
@@ -575,12 +570,7 @@
 			direction = import
 			target = c:TPG.market
 		}
-		create_trade_route = {
-			goods = opium
-			level = 8
-			direction = import
-			target = c:MUG.market
-		}
+		
 		create_trade_route = {
 			goods = clothes
 			level = 4
@@ -615,12 +605,7 @@
 			direction = import
 			target = c:TPG.market
 		}
-		create_trade_route = {
-			goods = dye
-			level = 7
-			direction = import
-			target = c:MUG.market
-		}
+		
 		create_trade_route = {
 			goods = sugar
 			level = 6
@@ -693,12 +678,7 @@
 			direction = import
 			target = c:MDU.market
 		}
-		create_trade_route = {
-			goods = tobacco
-			level = 3
-			direction = import
-			target = c:MUG.market
-		}
+		
 		create_trade_route = {
 			goods = luxury_clothes
 			level = 5
@@ -785,12 +765,7 @@
 			direction = import
 			target = c:MCH.market
 		}
-		create_trade_route = {
-			goods = tobacco
-			level = 4
-			direction = import
-			target = c:MUG.market
-		}
+		
 		create_trade_route = {
 			goods = small_arms
 			level = 4
@@ -1190,27 +1165,7 @@
 	}
 	
 	#South Asia
-	#Mughal
-	c:MUG = {
-		create_trade_route = {
-			goods = silk
-			level = 4
-			direction = import
-			target = c:DAI.market
-		}
-		create_trade_route = {
-			goods = hardwood
-			level = 2
-			direction = import
-			target = c:AFG.market
-		}
-		create_trade_route = {
-			goods = clippers
-			level = 1
-			direction = import
-			target = c:BRG.market
-		}
-	}
+
 	
 	#Bengal
 	c:BGL = {

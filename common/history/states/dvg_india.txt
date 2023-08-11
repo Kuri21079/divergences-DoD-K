@@ -112,7 +112,7 @@
 	#Nagpur
 	s:STATE_NAGPUR = {
 		create_state = {
-			country = c:MUG
+			country = c:SRY
 			owned_provinces = { "x52001D" "x66337F" "x5CBFF7" "xD64336" "x7884D6" "x6B7184" "x4605A8" }
 		}
 		create_state = {

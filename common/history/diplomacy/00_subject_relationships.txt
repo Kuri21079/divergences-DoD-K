@@ -7,10 +7,7 @@ DIPLOMACY = {
 	}
 
 	c:SHU = {
-		create_diplomatic_pact = {
-			country = c:NAN
-			type = vassal
-		}
+	
 		create_diplomatic_pact = {
 			country = c:XIB
 			type = vassal
@@ -24,21 +21,19 @@ DIPLOMACY = {
 			type = vassal
 		}
 		create_diplomatic_pact = {
-			country = c:GUI
-			type = vassal
-		}
-		create_diplomatic_pact = {
 			country = c:HNA
 			type = vassal
 		}
-		create_diplomatic_pact = {
-			country = c:JIA
-      }
+		
       }
 
 	c:BRU = {
 		create_diplomatic_pact = {
 			country = c:LAN
+      	type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:PON
       	type = vassal
 		}
 	}

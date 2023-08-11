@@ -88,7 +88,7 @@ AFG = { #Afghanistan
 	
 	tier = kingdom
 	
-	cultures = { pashtun tajik }
+	cultures = { pashtun tajik persian }
 	capital = STATE_EASTERN_AFGHANISTAN
 }
 

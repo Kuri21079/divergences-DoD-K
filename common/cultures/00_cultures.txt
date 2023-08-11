@@ -7745,7 +7745,7 @@ tibetan={
 
 assamese={
 	color= hsv{ 0.58 0.28 0.61 }
-	religion = sunni
+	religion = hindu
 	traits = { south_asian_heritage northeast_indian }
 	male_common_first_names={
 		Chandraka
@@ -7839,9 +7839,9 @@ bengali={
 		Tajuddin
 	}
 	ethnicities = {
-		1 = asian
+		1 = indian
 	}
-	graphics = asian
+	graphics = mideast_indian
 }
 
 bihari={

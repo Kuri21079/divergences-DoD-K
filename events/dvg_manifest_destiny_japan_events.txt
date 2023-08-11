@@ -31,3 +31,42 @@ dvg_manifest_destiny_japan.1 = {
 		}
 	}
 }
+dvg_manifest_destiny_japan.2 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_gold_prospectors.bk2"
+	}
+	
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/capitalists_meeting"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	title = dvg_manifest_destiny_japan.2.t
+	desc = dvg_manifest_destiny_japan.2.d
+	
+	duration = 3
+	
+	trigger = {
+	}
+	
+	option = {
+		name = dvg_manifest_destiny_japan.2.a
+		default_option = yes
+		every_scope_state = {
+			limit = {
+				state_region = {
+					is_homeland = cu:qingqiuan
+				}
+			}
+			add_modifier = {
+				    name = patagonian_settlement
+				    months = long_modifier_time
+			}
+			add_homeland = kaiganese
+		}
+	}
+}
