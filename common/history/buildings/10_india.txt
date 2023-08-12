@@ -539,7 +539,7 @@
 	
 	#Tranavcore
 	s:STATE_MYSORE={
-		region_state:TRA={
+		region_state:MYS={
 			create_building={
 				building="building_textile_mills"
 				level=3
@@ -551,7 +551,13 @@
 				level=4
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_gold_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_gold_mine" }
-			}			
+			}
+			create_building={
+				building="building_arms_industry"
+				level=1
+				reserves=2
+				activate_production_methods={ "pm_muskets" "pm_merchant_guilds_building_arms_industry" "pm_cannons" }
+			}	
 			create_building={
 				building="building_coffee_plantation"
 				level=5
@@ -566,9 +572,9 @@
 			}
 			create_building={
 				building="building_barracks"
-				level=20
+				level=15
 				reserves=1
-				activate_production_methods={ "pm_irregular_infantry" "pm_wound_dressing" "pm_cavalry_scouts" "pm_no_specialists" "pm_no_artillery" }
+				activate_production_methods={ "pm_line_infantry" "pm_cannon_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
 		}
 	}

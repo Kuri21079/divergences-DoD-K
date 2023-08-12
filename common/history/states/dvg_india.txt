@@ -190,7 +190,7 @@
 	}
 	s:STATE_MYSORE = {
 		create_state = {
-			country = c:TRA
+			country = c:MYS
 			owned_provinces = { "x102D8B" "x16AA78" "x189045" "x1B7225" "x25CBCC" "x2A60B3" "x696049" "x8E3C9D" "x903060" "x9FE13F" "xA26314" "xB4ABD5" "xBFDC26" "xD0F0A0" "xE5A1AC" "xEDFC06" }
 		}
 		

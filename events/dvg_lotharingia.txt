@@ -405,22 +405,22 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 		s:STATE_LIBREVILLE = {
 			add_claim = c:LOT
 		}
-s:STATE_NOUVELLE_ALSACE = {
-			add_claim = c:LOT
-		}
-s:STATE_BOURGOGNE_DU_SUD = {
-			add_claim = c:LOT
-		}
-s:STATE_TRANSFLEUVE = {
-			add_claim = c:LOT
-		}
-s:STATE_BRUXELLES_SUR_ODON = {
-			add_claim = c:LOT
-		}	
+		s:STATE_NOUVELLE_ALSACE = {
+					add_claim = c:LOT
+				}
+		s:STATE_BOURGOGNE_DU_SUD = {
+					add_claim = c:LOT
+				}
+		s:STATE_TRANSFLEUVE = {
+					add_claim = c:LOT
+				}
+		s:STATE_BRUXELLES_SUR_ODON = {
+					add_claim = c:LOT
+				}	
 
-s:STATE_MARCHES_OUEST = {
-			add_claim = c:LOT
-		}
+		s:STATE_MARCHES_OUEST = {
+					add_claim = c:LOT
+				}
 		
 		if = {
 			limit = { exists = s:STATE_BOURGOGNE_DU_SUD.region_state:LOT }

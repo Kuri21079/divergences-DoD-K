@@ -62,10 +62,6 @@ dvg_manifest_destiny_japan.2 = {
 					is_homeland = cu:qingqiuan
 				}
 			}
-			add_modifier = {
-				    name = patagonian_settlement
-				    months = long_modifier_time
-			}
 			add_homeland = kaiganese
 		}
 	}

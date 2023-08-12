@@ -21,6 +21,7 @@
 			target = c:ARN.market
 		}
 	}
+
 	
 	#Belgian Confederation
 	c:BLC = {
@@ -1492,6 +1493,16 @@
 			level = 7
 			direction = import
 			target = c:JAV.market
+		}
+	}
+
+	c:MYS = {
+		
+		create_trade_route = {
+			goods = iron
+			level = 3
+			direction = import
+			target = c:DUA.market
 		}
 	}
 }

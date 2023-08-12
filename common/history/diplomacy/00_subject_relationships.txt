@@ -273,6 +273,10 @@ DIPLOMACY = {
 			country = c:MDU
 			type = vassal
 		}
+		create_diplomatic_pact = {
+			country = c:TRA
+			type = vassal
+		}
 	}
 	c:VIJ = {
 		create_diplomatic_pact = {
@@ -281,6 +285,16 @@ DIPLOMACY = {
 		}
 		create_diplomatic_pact = {
 			country = c:NAG
+			type = vassal
+		}
+	}
+	c:AZB = {
+		create_diplomatic_pact = {
+			country = c:IME
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:SAM
 			type = vassal
 		}
 	}
