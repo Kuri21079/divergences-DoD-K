@@ -6,6 +6,7 @@
 			last_name = Khan
 			ruler = yes
 			noble = yes
+			culture = cu:mongol
 			religion = rel:sunni
 			birth_date = 1770.2.3
 			interest_group = ig_rural_folk
@@ -14,6 +15,7 @@
 				ambitious
 				plains_commander
 				expert_offensive_planner
+				immortal
 			}
 			on_created = {
 				set_variable = {
@@ -28,6 +30,7 @@
 			last_name = Khan
 			heir = yes
 			noble = yes
+			culture = cu:mongol
 			birth_date = 1808.5.8
 			interest_group = ig_landowners
 			ideology = ideology_jingoist_leader

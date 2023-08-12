@@ -1,52 +1,53 @@
-﻿# namespace = dvg_dzungaria
+﻿ namespace = dvg_dzungaria
 
-# # # Dzungaria Intro
-# # dzu_events.1 = {
-# #     type = country_event
-# #     placement = country
-    
-# #     event_image = {}
+dvg_dzungaria.1 = {  #Dzungar intro
+	type = country_event
+	placement = ROOT
 
-# #     on_created_soundaffect = {}
-# #     on_opened_soundaffect = {}
+	title = dvg_dzungaria.1.t
+	desc = dvg_dzungaria.1.d
+	flavor = dvg_dzungaria.1.f
+	
+	event_image = {
+		video = "middleeast_courtroom_upheaval"
+	}
 
-# #     icon = {}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
 
-# #     title = dzu_events.1.t
-# #     desc = dzu_events.1.d
-# #     flavor = dzu_events.1.f
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
-# #     duration = {}
+	duration = 1
 
-# #     trigger = {`
-# #         tag = c:DZU
-# #         not = { has_country_flag = turania_presentation }
-
-# #         }
-
-# #     immediate = {}
-
-# #     option = {
-# #         name = dzu_events.1.a 
-# #         default_option = yes
-        
-# #         set_country_flag = turania_presentation
-# #     }
-# # }
+	trigger = {
+	    
+	}
+	
+	
+	
+	option = {
+		name = dvg_dzungaria.1.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_galdan_khan
+		}
+		
+	}
+}
 
 # #Collapse of Dzungaria
 
-dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
+dvg_dzungaria.2 = { #Split Dzungaria up into warlord states
 	type = country_event
 	placement = root
 	duration = 3
 
-	title = dvg_lotharingia.5.t
-	desc = dvg_lotharingia.5.d
-	flavor = dvg_lotharingia.5.f
+	title = dvg_dzungaria.2.t
+	desc = dvg_dzungaria.2.d
+	flavor = dvg_dzungaria.2.f
 
 	event_image = {
-		video = "europenorthamerica_springtime_of_nations"
+		video = "gfx/event_pictures/asia_sepoy_mutiny.bk2"
 	}
 
 	on_created_soundeffect = "event:/SFX/Events/southamerica/war_civilians"
@@ -68,10 +69,10 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 		set_variable = chinese_central_government
 		
 		
-		s:STATE_LIBREVILLE = {
+		s:STATE_URGA = {
 			add_claim = c:DZU
 		}
-		s:STATE_NOUVELLE_ALSACE = {
+		s:STATE_ULIASTAI = {
 					add_claim = c:DZU
 				}
 		s:STATE_SEMIRECHE = {
@@ -84,7 +85,7 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 					add_claim = c:DZU
 				}	
 
-		s:STATE_MARCHES_OUEST = {
+		s:STATE_KIRGHIZIA = {
 					add_claim = c:DZU
 				}
 		
@@ -95,6 +96,7 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 				origin = this
 				state = s:STATE_SEMIRECHE.region_state:DZU
 				state = s:STATE_AKMOLINSK.region_state:DZU
+				state = s:STATE_URALSK.region_state:DZU
 
 				on_created = {
 					warlord_setup_effect = yes
@@ -113,52 +115,66 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 		}
 
 		if = {
-			limit = { exists = s:STATE_NOUVELLE_ALSACE.region_state:DZU }
-			create_country = { #Nouvelle Alsace
-				tag = NEA
+			limit = { exists = s:STATE_ULIASTAI.region_state:DZU }
+			create_country = { #Mongolia
+				tag = MGL
 				origin = this
-				state = s:STATE_NOUVELLE_ALSACE.region_state:DZU
-				state = s:STATE_LIBREVILLE.region_state:DZU
+				state = s:STATE_HINGGAN.region_state:DZU
+				state = s:STATE_URGA.region_state:DZU
+				state = s:STATE_TRANS_BAIKAL.region_state:DZU
+				state = s:STATE_IRKUTSK.region_state:DZU
 
 				on_created = {
 					warlord_setup_effect = yes
-					set_variable = warlord_state
+					
 				}
 			}
-			c:NEA = { save_scope_as = scope_NEA}
+			c:MGL = { save_scope_as = scope_MGL}
 		}
 
 		if = {
-			limit = { exists = s:STATE_COTE_DU_CAFE.region_state:DZU }
-			create_country = { #Atlantia
-				tag = ATL 
+			limit = { exists = s:STATE_UZBEKIA.region_state:DZU }
+			create_country = { #Uzbekistan
+				tag = UZB 
 				origin = this
-				state = s:STATE_COTE_DU_CAFE.region_state:DZU
-				state = s:STATE_GOUAS.region_state:DZU
+				state = s:STATE_UZBEKIA.region_state:DZU
 
 				on_created = {
 					warlord_setup_effect = yes
 					set_variable = warlord_state
 				}
 			}
-			c:ATL = { save_scope_as = scope_ATL }
-			
-			
+			c:UZB = { save_scope_as = scope_UZB }
 		}
 
 		if = {
-			limit = { exists = s:STATE_MARCHES_OUEST.region_state:DZU }
-			create_country = { #Bukhara
-				tag = BUK
+			limit = { exists = s:STATE_KIRGHIZIA.region_state:DZU }
+			create_country = { #Kokand
+				tag = KOK
 				origin = this
-				state = s:STATE_URALSK.region_state:DZU
+				state = s:STATE_KIRGHIZIA.region_state:DZU
+				state = s:STATE_TAJIKISTAN.region_state:DZU
 
 				on_created = {
 					warlord_setup_effect = yes
 					set_variable = warlord_state
 				}
 			}
-			c:BUK = { save_scope_as = scope_BUK }
+			c:KOK = { save_scope_as = scope_KOK }
+		}
+		if = {
+			limit = { exists = s:STATE_TIANSHAN.region_state:DZU }
+			create_country = { #Kokand
+				tag = XIN
+				origin = this
+				state = s:STATE_TIANSHAN.region_state:DZU
+
+				on_created = {
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+			c:XIN = { save_scope_as = scope_XIN }
 		}
 
 		
@@ -192,7 +208,7 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 			set_variable = var_warlord_one
 		}
 
-		c:NEA = {
+		c:MGL = {
 		if = {
 			limit = {
 				has_variable = warlord_state
@@ -207,7 +223,7 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 			set_variable = var_warlord_two
 		}
 
-		c:ATL = {
+		c:UZB = {
 		if = {
 			limit = {
 				has_variable = warlord_state
@@ -222,7 +238,7 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 			set_variable = var_warlord_three
 		}
 
-		c:BUK = {
+		c:KOK = {
 		if = {
 			limit = {
 				has_variable = warlord_state
@@ -239,45 +255,52 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 	}
 
 	option = {
-		name = dvg_lotharingia.5.ab
+		name = dvg_dzungaria.2.ab
 		trigger = {
 			exists = scope:scope_random_warlord_one
 			is_player = yes
 		}
 		c:DZU = {
 		create_diplomatic_play = {
-			name = guarani_independence
+			
 		
-			target_country = c:BUK
+			target_country = c:KOK
 			
 			war = yes
 			
 			type = dp_rebellion_annex
 			
 			add_war_goal = {
-				holder = c:BUK
-				type = conquer_state
-				target_state = s:STATE_UZBEKIA.region_state:DZU
-				target_country = c:DZU
-			}
-		}
-		create_diplomatic_play = {
-			name = new_alsace_independence
-		
-			target_country = c:NEA
-			
-			war = yes
-			
-			type = dp_rebellion_annex
-			
-			add_war_goal = {
-				holder = c:NEA
+				holder = c:KOK
 				type = war_reparations
+				
 				target_country = c:DZU
 			}
 		}
 		create_diplomatic_play = {
-			name = coup_of_odonia
+			
+		
+			target_country = c:XIN
+			
+			war = no
+			
+			type = dp_rebellion_annex
+			
+			add_war_goal = {
+				holder = c:XIN
+				type = conquer_state
+				target_state = s:STATE_DZUNGARIA.region_state:DZU
+				target_country = c:DZU
+			}
+			add_war_goal = {
+				holder = c:XIN
+				type = conquer_state
+				target_state = s:STATE_JETISY.region_state:DZU
+				target_country = c:DZU
+			}
+		}
+		create_diplomatic_play = {
+			
 		
 			target_country = c:KAZ
 			
@@ -287,6 +310,21 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 			
 			add_war_goal = {
 				holder = c:KAZ
+				type = war_reparations
+				target_country = c:DZU
+			}
+		}
+		create_diplomatic_play = {
+		
+		
+			target_country = c:MGL
+			
+			war = yes
+			
+			type = dp_rebellion_annex
+			
+			add_war_goal = {
+				holder = c:MGL
 				type = annex_country
 				target_country = c:DZU
 			}
@@ -296,39 +334,59 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 	}
 
 	option = {
-		name = dvg_lotharingia.5.b
+		name = dvg_dzungaria.2.b
 		trigger = {
 			exists = scope:scope_random_warlord_two
 			is_player = yes
 		}
 		c:DZU = {
 		create_diplomatic_play = {
-			name = guarani_independence
+			
 		
-			target_country = c:BUK
+			target_country = c:KOK
 			
 			war = no
 			
 			type = dp_rebellion_annex
 			
 			add_war_goal = {
-				holder = c:BUK
-				type = conquer_state
-				target_state = s:STATE_UZBEKIA.region_state:DZU
+				holder = c:KOK
+				type = war_reparations
 				target_country = c:DZU
 			}
 		}
 		create_diplomatic_play = {
-			name = new_alsace_independence
+			
 		
-			target_country = c:NEA
+			target_country = c:XIN
 			
 			war = no
 			
 			type = dp_rebellion_annex
 			
 			add_war_goal = {
-				holder = c:NEA
+				holder = c:XIN
+				type = conquer_state
+				target_state = s:STATE_DZUNGARIA.region_state:DZU
+				target_country = c:DZU
+			}
+			add_war_goal = {
+				holder = c:XIN
+				type = conquer_state
+				target_state = s:STATE_JETISY.region_state:DZU
+				target_country = c:DZU
+			}
+		}
+		create_diplomatic_play = {
+			
+			target_country = c:KAZ
+			
+			war = no
+			
+			type = dp_rebellion_annex
+			
+			add_war_goal = {
+				holder = c:KAZ
 				type = war_reparations
 				target_country = c:DZU
 			}
@@ -336,14 +394,14 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 		create_diplomatic_play = {
 			name = coup_of_odonia
 		
-			target_country = c:KAZ
+			target_country = c:MGL
 			
 			war = yes
 			
 			type = dp_rebellion_annex
 			
 			add_war_goal = {
-				holder = c:KAZ
+				holder = c:MGL
 				type = annex_country
 				target_country = c:DZU
 			}
@@ -353,54 +411,75 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 	}
 
 	option = {
-		name = dvg_lotharingia.5.c
+		name = dvg_dzungaria.2.c
 		trigger = {
 			exists = scope:scope_random_warlord_three
 			is_player = yes
 		}
 		c:DZU = {
 		create_diplomatic_play = {
-			name = guarani_independence
+			
 		
-			target_country = c:BUK
+			target_country = c:KOK
 			
 			war = no
 			
 			type = dp_rebellion_annex
 			
 			add_war_goal = {
-				holder = c:BUK
-				type = conquer_state
-				target_state = s:STATE_UZBEKIA.region_state:DZU
-				target_country = c:DZU
-			}
-		}
-		create_diplomatic_play = {
-			name = new_alsace_independence
-		
-			target_country = c:NEA
-			
-			war = no
-			
-			type = dp_rebellion_annex
-			
-			add_war_goal = {
-				holder = c:NEA
+				holder = c:KOK
 				type = war_reparations
 				target_country = c:DZU
 			}
 		}
 		create_diplomatic_play = {
-			name = coup_of_odonia
+			
+		
+			target_country = c:XIN
+			
+			war = no
+			
+			type = dp_rebellion_annex
+			
+			add_war_goal = {
+				holder = c:XIN
+				type = conquer_state
+				target_state = s:STATE_DZUNGARIA.region_state:DZU
+				target_country = c:DZU
+			}
+			add_war_goal = {
+				holder = c:XIN
+				type = conquer_state
+				target_state = s:STATE_JETISY.region_state:DZU
+				target_country = c:DZU
+			}
+		}
+		create_diplomatic_play = {
+			
 		
 			target_country = c:KAZ
+			
+			war = no
+			
+			type = dp_rebellion_annex
+			
+			add_war_goal = {
+				holder = c:KAZ
+				type = war_reparations
+				target_country = c:DZU
+			}
+		}
+		create_diplomatic_play = {
+			
+		
+			target_country = c:MGL
 			
 			war = yes
 			
 			type = dp_rebellion_annex
 			
 			add_war_goal = {
-				holder = c:KAZ
+				holder = c:MGL
 				type = annex_country
 				target_country = c:DZU
 			}
@@ -410,7 +489,7 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 	}
 
 	option = {
-		name = dvg_lotharingia.5.aa
+		name = dvg_dzungaria.2.aa
 		trigger = {
 			exists = scope:scope_random_warlord_four
 			is_player = yes
@@ -418,7 +497,44 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 		c:DZU = {
 		
 		create_diplomatic_play = {
-			name = coup_of_odonia
+			
+		
+			target_country = c:MGL
+			
+			war = yes
+			
+			type = dp_rebellion_annex
+			
+			add_war_goal = {
+				holder = c:MGL
+				type = annex_country
+				target_country = c:DZU
+			}
+		}
+		create_diplomatic_play = {
+			
+		
+			target_country = c:XIN
+			
+			war = no
+			
+			type = dp_rebellion_annex
+			
+			add_war_goal = {
+				holder = c:XIN
+				type = conquer_state
+				target_state = s:STATE_DZUNGARIA.region_state:DZU
+				target_country = c:DZU
+			}
+			add_war_goal = {
+				holder = c:XIN
+				type = conquer_state
+				target_state = s:STATE_JETISY.region_state:DZU
+				target_country = c:DZU
+			}
+		}
+	   create_diplomatic_play = {
+			
 		
 			target_country = c:KAZ
 			
@@ -428,21 +544,6 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 			
 			add_war_goal = {
 				holder = c:KAZ
-				type = annex_country
-				target_country = c:DZU
-			}
-		}
-	   create_diplomatic_play = {
-			name = new_alsace_independence
-		
-			target_country = c:NEA
-			
-			war = yes
-			
-			type = dp_rebellion_annex
-			
-			add_war_goal = {
-				holder = c:NEA
 				type = war_reparations
 				target_country = c:DZU
 			}
@@ -450,16 +551,15 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 	   create_diplomatic_play = {
 			name = guarani_independence
 		
-			target_country = c:BUK
+			target_country = c:KOK
 			
 			war = no
 			
 			type =dp_rebellion_annex
 			
 			add_war_goal = {
-				holder = c:BUK
-				type = conquer_state
-				target_state = s:STATE_UZBEKIA.region_state:DZU
+				holder = c:KOK
+				type = war_reparations
 				target_country = c:DZU
 			}
 		}
@@ -468,43 +568,48 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 	}
 
 	option = {
-		default_option = yes
 		
-		name = dvg_lotharingia.5.a
+		name = dvg_dzungaria.2.a
 		c:DZU = {
 		create_diplomatic_play = {
-			name = guarani_independence
+			
 		
-			target_country = c:BUK
+			target_country = c:KOK
 			
 			war = no
 			
 			type = dp_rebellion_annex
 			
 			add_war_goal = {
-				holder = c:BUK
-				type = conquer_state
-				target_state = s:STATE_UZBEKIA.region_state:DZU
-				target_country = c:DZU
-			}
-		}
-		create_diplomatic_play = {
-			name = new_alsace_independence
-		
-			target_country = c:NEA
-			
-			war = no
-			
-			type = dp_rebellion_annex
-			
-			add_war_goal = {
-				holder = c:NEA
+				holder = c:KOK
 				type = war_reparations
 				target_country = c:DZU
 			}
 		}
 		create_diplomatic_play = {
-			name = coup_of_odonia
+			
+		
+			target_country = c:XIN
+			
+			war = no
+			
+			type = dp_rebellion_annex
+			
+			add_war_goal = {
+				holder = c:XIN
+				type = conquer_state
+				target_state = s:STATE_DZUNGARIA.region_state:DZU
+				target_country = c:DZU
+			}
+			add_war_goal = {
+				holder = c:XIN
+				type = conquer_state
+				target_state = s:STATE_JETISY.region_state:DZU
+				target_country = c:DZU
+			}
+		}
+		create_diplomatic_play = {
+			
 		
 			target_country = c:KAZ
 			
@@ -514,10 +619,101 @@ dvg_lotharingia.5 = { #Split Lotharingia up into warlord states
 			
 			add_war_goal = {
 				holder = c:KAZ
+				type = war_reparations
+				target_country = c:DZU
+			}
+		}
+		create_diplomatic_play = {
+			
+		
+			target_country = c:MGL
+			
+			war = no
+			
+			type = dp_rebellion_annex
+			
+			add_war_goal = {
+				holder = c:MGL
 				type = annex_country
 				target_country = c:DZU
 			}
 		}			
+	 }
 	}
+	option = {
+		
+		name = dvg_dzungaria.2.ac
+
+		c:DZU = {
+		create_diplomatic_play = {
+			
+		
+			target_country = c:KOK
+			
+			war = no
+			
+			type = dp_rebellion_annex
+			
+			add_war_goal = {
+				holder = c:KOK
+				type = war_reparations
+				target_country = c:DZU
+			}
+		}
+		create_diplomatic_play = {
+			
+		
+			target_country = c:XIN
+			
+			war = no
+			
+			type = dp_rebellion_annex
+			
+			add_war_goal = {
+				holder = c:XIN
+				type = conquer_state
+				target_state = s:STATE_DZUNGARIA.region_state:DZU
+				target_country = c:DZU
+			}
+			add_war_goal = {
+				holder = c:XIN
+				type = conquer_state
+				target_state = s:STATE_JETISY.region_state:DZU
+				target_country = c:DZU
+			}
+		}
+		create_diplomatic_play = {
+			
+		
+			target_country = c:KAZ
+			
+			war = no
+			
+			type = dp_rebellion_annex
+			
+			add_war_goal = {
+				holder = c:KAZ
+				type = war_reparations
+				target_country = c:DZU
+			}
+		}
+		create_diplomatic_play = {
+			
+		
+			target_country = c:MGL
+			
+			war = no
+			
+			type = dp_rebellion_annex
+			
+			add_war_goal = {
+				holder = c:MGL
+				type = annex_country
+				target_country = c:DZU
+			}
+		}
+			
+	}
+	play_as = c:XIN	
 	}
 }

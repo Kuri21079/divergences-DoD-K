@@ -270,19 +270,29 @@ dvg_annex_georgians = {
 		cu:georgian = {
 			NOT = { culture_is_discriminated_in = ROOT }
 		}
-		has_attitude = {
-					who = c:IME
-					attitude = loyal
-				}
-		has_attitude = {
-					who = c:SAM
-					attitude = loyal
-				}	
+		c:IME = {
+		   
+			is_subject_of = ROOT
+			is_ai = yes
+			has_attitude = {
+				who = c:AZB
+				attitude = loyal
+			}
 		
+		}
+		c:SAM = {
+			is_subject_of = ROOT
+			is_ai = yes
+			has_attitude = {
+				who = c:AZB
+				attitude = loyal
+			}
+		
+		}
 	}
-
     when_taken = {
-
+		annex = c:SAM
+		annex = c:IME
     }
 
 	ai_chance = {

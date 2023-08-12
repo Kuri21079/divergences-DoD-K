@@ -7,8 +7,6 @@
 	
 	cultures = { mongol kazak uighur uzbek}
 
-	religion = gelugpa
-
 	capital = STATE_DZUNGARIA
 }
 

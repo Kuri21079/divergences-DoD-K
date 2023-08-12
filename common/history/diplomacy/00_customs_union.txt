@@ -141,10 +141,5 @@
 			type = customs_union
 		}
 	}
-	c:SPA = {
-		create_diplomatic_pact = {
-			country = c:VIJ
-			type = customs_union
-		}
-	}
+	
 }

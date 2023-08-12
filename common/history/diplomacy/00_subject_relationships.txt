@@ -16,10 +16,7 @@ DIPLOMACY = {
 			country = c:SIH
 			type = vassal
 		}
-		create_diplomatic_pact = {
-			country = c:GNG
-			type = vassal
-		}
+		
 		create_diplomatic_pact = {
 			country = c:HNA
 			type = vassal
@@ -46,8 +43,14 @@ DIPLOMACY = {
 	}
 	c:VIN = {
 		create_diplomatic_pact = {
-			country = c:ATH
+			country = c:SKR
 			type = protectorate
+		}
+	}
+	c:PLA = {
+		create_diplomatic_pact = {
+			country = c:CHE
+			type = dominion
 		}
 	}
 	c:SPA = {

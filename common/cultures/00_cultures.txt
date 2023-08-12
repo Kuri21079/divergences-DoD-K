@@ -7519,6 +7519,7 @@ mongol={
 		Dambyan
 		Damdin
 		Dogsomyn
+		Galdan
 		Gonchigjalzangiin
 		Gonchigtseren
 		Injinash
