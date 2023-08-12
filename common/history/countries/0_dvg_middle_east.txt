@@ -51,165 +51,307 @@
 	#	#any other starting effects
 	#}
 	
-	c:ALD = { #Algeria
+	c:NEJ = { #Nejd
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_slave_trade
-		
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = { 
-			set_interest_group_name = ig_sunni_madrasahs
-		}
-	}
-	
-	c:TUN = { #Tunisia
-		effect_starting_technology_tier_4_tech = yes
-		
-		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_slave_trade
-		
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = { 
-			set_interest_group_name = ig_sunni_madrasahs
-		}
-	}
-	
-	c:EGY = { #Egypt
-		effect_starting_technology_tier_4_tech = yes
-		add_technology_researched = law_enforcement
-		add_technology_researched = urban_planning
-		
-		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_slave_trade
-		
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = { 
-			set_interest_group_name = ig_sunni_madrasahs
-		}
-	}
-	
-	c:SUD = { #Funj Sultanate
-		effect_starting_technology_tier_5_tech = yes
-		add_technology_researched = international_trade
-		
-		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_debt_slavery
-		
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = { 
-			set_interest_group_name = ig_sunni_madrasahs
-		}
-	}
-	
-	c:DFR = { #Darfur
-		effect_starting_technology_tier_5_tech = yes
-		
-		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_isolationism
-		activate_law = law_type:law_debt_slavery
-		
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = { 
-			set_interest_group_name = ig_sunni_madrasahs
-		}
-	}
-	
-	c:TBI = { #Tibesti
-		effect_starting_technology_tier_6_tech = yes
-		effect_native_conscription_5 = yes
-		effect_starting_politics_traditional = yes
-	}
-	
-	c:AHG = { #Ahaggar
-		effect_starting_technology_tier_6_tech = yes
-		effect_starting_politics_traditional = yes
-		effect_native_conscription_5 = yes
-		activate_law = law_type:law_debt_slavery
-	}
-	
-	c:TUA = { #Tuat
-		effect_starting_technology_tier_6_tech = yes
-		effect_native_conscription_8 = yes
-		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_debt_slavery
-	}
-	
-	c:OUA = { #Oualata
-		effect_starting_technology_tier_6_tech = yes
-		effect_native_conscription_6 = yes
-		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_debt_slavery
-	}
-	
-	c:ADG = { #Adagh
-		effect_starting_technology_tier_6_tech = yes
-		effect_starting_politics_traditional = yes
-		effect_native_conscription_5 = yes
-		activate_law = law_type:law_debt_slavery
-	}
-	
-	c:AIR = { #Air
-		effect_starting_technology_tier_6_tech = yes
-		effect_starting_politics_traditional = yes
-		effect_native_conscription_4 = yes
-		activate_law = law_type:law_debt_slavery
-	}
-	
-	c:SAH = { #Sahrawi
-		effect_starting_technology_tier_6_tech = yes
-		effect_native_conscription_8 = yes
-		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_debt_slavery
-	}
-	
-	c:FRF = { #Al-Farafra
-		effect_starting_technology_tier_6_tech = yes
-		effect_starting_politics_traditional = yes
-		effect_native_conscription_5 = yes
-	}
-	
-	c:AMT = { #Amatsa
-		effect_starting_technology_tier_4_tech = yes
-		
-		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_oligarchy
-		activate_law = law_type:law_slave_trade
 		
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
 		ig:ig_devout = {
-			set_interest_group_name = ig_oriental_orthodox_church
-			remove_ideology = ideology_patriarchal
-			add_ideology = ideology_oriental_orthodox_patriarch
+			set_interest_group_name = ig_sunni_madrasahs
 		}
 	}
 	
-	c:MOR = { #Morocco
+	c:JAB = {
+		effect_starting_technology_tier_4_tech = yes
+		
+		effect_starting_politics_traditional = yes
+
+		activate_law = law_type:law_no_migration_controls
+		
+		set_ruling_interest_groups = {
+			ig_landowners
+		}
+		ig:ig_devout = {
+			set_interest_group_name = ig_sunni_madrasahs
+		}
+	}
+	
+	c:OMA = { #Oman
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = currency_standards
+		
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_land_based_taxation	
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_tenant_farmers
+		
+		set_ruling_interest_groups = {
+			ig_landowners
+		}
+		ig:ig_devout = {
+			set_interest_group_name = ig_ibadi
+			add_ideology = paternalistic
+		}
+	}
+	
+	c:ABU = { #Abu Dhabi
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_slave_trade
 		
+		
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
-		ig:ig_devout = { 
+		ig:ig_devout = {
 			set_interest_group_name = ig_sunni_madrasahs
 		}
-		trigger_event = {
-			id = dvg_morocco.1
+	}
+	
+	c:YEM = { #Yemen
+		effect_starting_technology_tier_4_tech = yes
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_migration_controls
+		
+		set_ruling_interest_groups = {
+			ig_landowners
 		}
+		ig:ig_devout = {
+			set_interest_group_name = ig_sunni_madrasahs
+		}
+	}
+	
+	c:HDJ = { #Hedjaz
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = academia
+		
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_migration_controls
+		
+		set_ruling_interest_groups = {
+			ig_devout
+		}
+		ig:ig_devout = {
+			set_interest_group_name = ig_sunni_madrasahs
+		}
+	}
+	
+	c:IRQ = { #Iraq
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = law_enforcement
+		add_technology_researched = urban_planning
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_migration_controls
+		
+		set_ruling_interest_groups = {
+			ig_landowners
+		}
+		ig:ig_devout = {
+			set_interest_group_name = ig_shia_madrasahs
+		}
+	}
+	
+	c:SHZ = { #Shiraz
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = law_enforcement
+		add_technology_researched = urban_planning
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_homesteading
+		activate_law = law_type:law_migration_controls
+		
+		set_ruling_interest_groups = {
+			ig_landowners
+		}
+		ig:ig_devout = {
+			set_interest_group_name = ig_shia_madrasahs
+		}
+		ig:ig_armed_forces = {
+			set_interest_group_name = ig_qashqai
+			add_ideology = ideology_particularist
+		}
+		ig:ig_rural_folk = {
+			set_interest_group_name = ig_lurish
+			add_ideology = ideology_liberal
+		}
+		
+		trigger_event = { id = dvg_persia.3}
+		
+	}
+	
+	c:TEH = { #Teheran
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = law_enforcement
+		add_technology_researched = urban_planning
+		add_technology_researched = academia
+		add_technology_researched = currency_standards
+		add_technology_researched = mandatory_service
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_feudal_armies
+		activate_law = law_type:law_no_migration_controls
+		
+		set_ruling_interest_groups = {
+			ig_landowners
+			
+		}
+		ig:ig_devout = {
+			set_interest_group_name = ig_kawaltiya
+			add_ideology = ideology_individualist
+		}
+		ig:ig_landowners = {
+			set_interest_group_name = ig_zaydi
+			remove_ideology = ideology_stratocratic
+			add_ideology = ideology_pious
+		}
+		ig:ig_intelligentsia = {
+			set_interest_group_name = ig_constitutionalist
+			
+		}
+		ig:ig_petty_bourgeoisie = {
+			set_interest_group_name = ig_merchants
+			
+		}
+		trigger_event = { id = dvg_persia.5}
+		
+	}
+	
+	#Starting Kurdistan + Syria is too much for Ottomans
+	# c:KUR = { #Kurdistan
+		# effect_starting_technology_tier_4_tech = yes
+		# add_technology_researched = law_enforcement
+		# add_technology_researched = urban_planning
+		
+		# activate_law = law_type:law_racial_segregation
+		# activate_law = law_type:law_land_based_taxation
+		# activate_law = law_type:law_censorship
+		# activate_law = law_type:law_slave_trade
+		
+		# set_ruling_interest_groups = {
+			# ig_landowners
+		# }
+		# ig:ig_devout = {
+			# set_interest_group_name = ig_sunni_madrasahs
+		# }
+	# }
+	
+	# c:SYR = { #Syria
+		# effect_starting_technology_tier_4_tech = yes
+		# add_technology_researched = law_enforcement
+		# add_technology_researched = urban_planning
+		
+		# activate_law = law_type:law_national_supremacy
+		# activate_law = law_type:law_land_based_taxation
+		# activate_law = law_type:law_censorship
+		# activate_law = law_type:law_slave_trade
+		
+		# set_ruling_interest_groups = {
+			# ig_landowners
+		# }
+		# ig:ig_devout = {
+			# set_interest_group_name = ig_sunni_madrasahs
+		# }
+	# }
+	
+	c:KU1 = { #Sorani
+	effect_starting_technology_tier_4_tech = yes
+	
+	effect_starting_politics_traditional = yes
+	activate_law = law_type:law_land_based_taxation
+	activate_law = law_type:law_slavery_abolished
+	activate_law = law_type:law_cultural_exclusion
+	
+	set_ruling_interest_groups = {
+		ig_landowners
+	}
+	ig:ig_devout = {
+		set_interest_group_name = ig_sunni_madrasahs
+	}
+	}
+
+	c:KU2 = { #Bohtan
+	effect_starting_technology_tier_4_tech = yes
+	
+	effect_starting_politics_traditional = yes
+	activate_law = law_type:law_land_based_taxation
+	activate_law = law_type:law_slave_trade
+	
+	set_ruling_interest_groups = {
+		ig_landowners
+	}
+	ig:ig_devout = {
+		set_interest_group_name = ig_sunni_madrasahs
+	}
+
+	}
+
+	c:AAL = { #Alrube Alkhali
+	effect_starting_technology_tier_6_tech = yes
+	effect_native_conscription_1 = yes
+	effect_starting_politics_traditional = yes
+	}
+
+	c:RUW = { #Ruwallah
+	effect_starting_technology_tier_6_tech = yes
+	effect_native_conscription_1 = yes
+	effect_starting_politics_traditional = yes
+	}
+
+
+	c:KU3 = { #Hakkarian
+	effect_starting_technology_tier_4_tech = yes
+	
+	effect_starting_politics_traditional = yes
+	activate_law = law_type:law_land_based_taxation
+	activate_law = law_type:law_slave_trade
+
+	set_ruling_interest_groups = {
+		ig_landowners
+	}
+	ig:ig_devout = {
+		set_interest_group_name = ig_sunni_madrasahs
+	}
+	}
+
+	
+	c:KU4 = { #Bitlis
+	effect_starting_technology_tier_4_tech = yes
+	
+	effect_starting_politics_traditional = yes
+	activate_law = law_type:law_land_based_taxation
+	activate_law = law_type:law_slave_trade
+
+	set_ruling_interest_groups = {
+		ig_landowners
+	}
+	ig:ig_devout = {
+		set_interest_group_name = ig_sunni_madrasahs
+	}
 	}
 }

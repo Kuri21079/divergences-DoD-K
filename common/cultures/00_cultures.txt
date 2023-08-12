@@ -8426,6 +8426,12 @@ rajput={
 		Sawai
 		Umar
 		Veer
+
+		Raima
+		Ratang
+		Rana
+		Vanvir
+		Vikramaditya 
 	}
 	female_common_first_names = {
 		Gayatri
@@ -8439,6 +8445,8 @@ rajput={
 		Jethwa
 		Kunwar
 		Raksel
+		Sanga
+		Sisodia
 	}
 	common_last_names={
 		Bachittar_Singh
@@ -9777,6 +9785,9 @@ han={
 		Yu
 		Zhang
 		Zhu
+
+		Zicheng
+		Hongji
 	}
 	female_common_first_names = {
 		Akew
@@ -10110,6 +10121,10 @@ min={
 		Xue
 		Yan
 		Zheng
+
+		Koxinga
+		Jing
+		Keshuang
 	}
 	female_common_first_names = {
 		Akew
@@ -10131,7 +10146,7 @@ min={
 		Cui
 		Li
 		Nie
-		Zhang
+		Zheng
 	}
 	common_last_names={
 		Baochen

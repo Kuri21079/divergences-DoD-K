@@ -1,0 +1,25 @@
+﻿CHARACTERS = {
+	c:SHU = {
+
+		create_character = {
+			first_name = Hsia
+			last_name = Li
+			historical = yes
+			ruler = yes
+			ig_leader = yes
+			female = no
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			birth_date = 1800.5.19 
+			traits = {
+				experienced_diplomat
+				
+				reserved
+				
+				
+			}
+			
+		}
+		
+	}
+}

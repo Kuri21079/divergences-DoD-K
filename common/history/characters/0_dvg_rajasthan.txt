@@ -1,0 +1,20 @@
+﻿CHARACTERS = {
+	c:RAJ = {
+	    create_character = {
+			ruler = yes
+			ig_leader = yes
+			historical = yes
+			first_name = Harsha
+			last_name = Sanga
+			birth_date = 1792.09.11
+			ideology = ideology_traditionalist
+			interest_group = ig_landowners
+			traits = {
+				imperious
+				grifter
+				master_bureaucrat
+			}
+		}
+		
+	}
+}

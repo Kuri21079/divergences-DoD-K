@@ -94,6 +94,10 @@ DIPLOMACY = {
 			type = protectorate
 		}
 		create_diplomatic_pact = {
+			country = c:JAB
+			type = protectorate
+		}
+		create_diplomatic_pact = {
 			country = c:SIN
 			type = protectorate
 		}

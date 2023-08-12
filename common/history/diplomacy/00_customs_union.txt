@@ -116,6 +116,10 @@
 			country = c:OLD
 			type = customs_union
 		}
+		create_diplomatic_pact = {
+			country = c:JAB
+			type = customs_union
+		}
 	}
 	c:ARN = {
 		create_diplomatic_pact = {

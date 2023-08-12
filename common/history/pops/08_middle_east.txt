@@ -984,7 +984,7 @@
 			}
 			create_pop = {
 				culture = bedouin
-				size = 17725
+				size = 1772
 				religion = shiite
 			}
 		}
@@ -1446,11 +1446,11 @@
 		region_state:JAB = {
 			create_pop = {
 				culture = bedouin
-				size = 10797
+				size = 1079
 			}
 			create_pop = {
 				culture = bedouin
-				size = 79608
+				size = 7960
 				religion = shiite
 			}
 			create_pop = {
@@ -1475,18 +1475,18 @@
 		region_state:JAB = {
 			create_pop = {
 				culture = bedouin
-				size = 45695
+				size = 4569
 			}
 			create_pop = {
 				culture = bedouin
-				size = 52785
+				size = 5278
 				religion = shiite
 			}
 		}
 		region_state:NEJ = {
 			create_pop = {
 				culture = bedouin
-				size = 264800
+				size = 26480
 			}
 		}
 		region_state:AAL = {

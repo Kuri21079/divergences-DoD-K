@@ -234,11 +234,16 @@
  Clodio: "Clodio"
  Magno_Puma_Muyuroney: "Magno Puma Muyuroney"
  
-#Zhourao
+#Chinese
  Zicheng: "Zicheng"
  Yuting: "Yuting"
  Futing: "Futing"
  Yeng: "Yeng"
+ Hongji: "Hongji"
+ Koxinga: "Koxinga"
+ Jing: "Jing"
+ Keshuang: "Keshuang"
+ 
  
  
 #Japanese
@@ -666,3 +671,10 @@ Rostam: "Rostam"
 Zahed: "Zahed"
 Rubari: "Rubari"
 
+#Indian
+
+Rana: "Rana"
+Raima: "Raima"
+Ratang: "Ratang"
+Vanvir: "Vanvir"
+Vikramaditya: "Vikramaditya"

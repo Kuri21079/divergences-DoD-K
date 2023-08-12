@@ -1,0 +1,25 @@
+﻿CHARACTERS = {
+	c:FRS = {
+
+		create_character = {
+			first_name = Wu
+			last_name = Zheng
+			historical = yes
+			is_general = yes
+			ruler = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			birth_date = 1800.5.19 
+			traits = {
+				imperious
+				
+				ambitious
+				
+				direct
+
+				charismatic
+			}
+		}
+		
+	}
+}
